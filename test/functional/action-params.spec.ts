@@ -1096,7 +1096,7 @@ describe(``, () => {
         headers: form.getHeaders(),
       });
     } catch (error) {
-      expect(error.response.status).toEqual(HttpStatusCodes.BAD_REQUEST);
+      expect(error.response.status).toEqual(HttpStatusCodes.INTERNAL_SERVER_ERROR);
     }
   });
 
